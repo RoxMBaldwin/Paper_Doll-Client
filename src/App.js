@@ -1,6 +1,4 @@
 import React, { Component } from 'react';
-import { Header } from './components/Header';
-import { Footer } from './components/Footer';
 import {
   Link
 } from 'react-router-dom'
@@ -26,12 +24,10 @@ class App extends Component {
   render() {
     return (
       <div className='application'>
-        <Header></Header>
         <h1 className='logo'>Paper Doll</h1>
         <div className='links'>
           <Link to='/begin/'>Login</Link>
         </div>
-        <Footer></Footer>
       </div>
     );
   }

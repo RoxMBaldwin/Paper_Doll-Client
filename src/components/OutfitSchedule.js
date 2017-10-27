@@ -1,20 +1,10 @@
 import React from 'react';
-import { Header } from './Header.js';
-import { Footer } from './Footer.js';
-import {
-  Link
-} from 'react-router-dom'
 import '../index.css';
 
 export class OutfitSchedule extends React.Component {
   render(){
-    return <div className='schedule'>
-    <Header></Header>
-    <div className='redirectingLinks'>
-      <Link to='/clothing/'>Closet</Link>
-      <br/>
-      <Link to='/begin/'>Home</Link>
-    </div>
+    return (
+  <div className='schedule'>
     <div className='dummyCalendar'>
       <h3> Outfit Schedule </h3>
       <div>1</div>
@@ -33,7 +23,7 @@ export class OutfitSchedule extends React.Component {
       <div>13</div>
       <div>14</div>
     </div>
-    <Footer></Footer>
   </div>
+  )
   };
 }
