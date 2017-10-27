@@ -1,5 +1,4 @@
 import React from 'react';
-import { Header } from './Header.js';
 import { Footer } from './Footer.js';
 import {
   Link
@@ -9,12 +8,6 @@ import '../index.css';
 export class Closet extends React.Component {
   render(){
     return <div className='closet'>
-    <Header></Header>
-      <div className='redirectingLinks'>
-        <Link to='/begin/'>Home</Link>
-        <br/>
-        <Link to='/outfits/'>Outfit Schedule</Link>
-      </div>
       <h1> Closet </h1>
       <div className='body'>
         <div className='sidebar'>

@@ -4,13 +4,15 @@ import './index.css';
 import { Laundry } from './components/Laundry.js'
 import { Build } from './components/Build.js'
 import App from './App';
-import { Main } from './components/Main.js'
+import Main from './components/Main.js'
 import { Closet } from './components/Closet.js'
 import { OutfitSchedule } from './components/OutfitSchedule'
 import {
   BrowserRouter as Router,
   Route
 } from 'react-router-dom'
+
+
 
 
 ReactDOM.render(

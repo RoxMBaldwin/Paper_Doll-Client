@@ -24,14 +24,32 @@ html, body {
   color: white;
 }
 
-.header {
+.navBar {
   background-color: Lavender;
   padding: 15px;
 }
 
-h1.logo {
+.container {
+  display: flex;
+  flex-direction: row;
+}
+
+.headerNavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  margin-left: 60px;;
+}
+
+a {
+  margin: 40px;
+}
+
+div.logo {
   background-color: Lavender;
-  padding: 15px;
+  padding-left: 15px;
+  display: flex;
+  align-items: flex-end;
 }
 
 img {
