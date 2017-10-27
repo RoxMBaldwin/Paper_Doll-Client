@@ -1,5 +1,6 @@
 import React from 'react';
-import Mirror from './Mirror.js'
+// import Mirror from './Mirror.js'
+import Hanger from './Hanger.js'
 import {
   Link
 } from 'react-router-dom'
@@ -11,8 +12,15 @@ class Closet extends React.Component {
 
   constructor(props){
     super(props)
-    this.state = {clothing:[]}
-    // this.state = {outfits:[]}
+    this.state = {
+      clothing:[],
+      setType: ''
+    }
+  }
+
+  handleType = (e) => {
+    const typeClicked = e.target.value
+    this.setState({setType: typeClicked})
   }
 
   async componentDidMount() {
@@ -22,26 +30,42 @@ class Closet extends React.Component {
     this.setState({clothing: response})
   //  this.setState({outfits:})
   // console.log({clothing})
+  }
 
-   }
   render(){
+    const clothingBytype = this.state.clothing.filter((piece) => {
+      console.log(this.state.setType, piece)
+      if(this.state.setType === ''){
+        return true
+      } else if(piece.typeOf === this.state.setType){
+        return true
+      } else {
+        return false
+      }
+    })
     return (
     <div className='closet'>
       <h1> Closet </h1>
       <div className='body'>
         <div className='sidebar'>
           <Link to='/laundry/'>Add new</Link>
-          <input type='button' value='top'/>
-          <input type='button' value='lower'/>
-          <input type='button' value='one piece'/>
-          <input type='button' value='shoes'/>
+          <input id='top' type='button' value='top' onClick={this.handleType}/>
+          <input id='lower' type='button' value='lower' onClick={this.handleType}/>
+          <input id='one-piece' type='button' value='one-piece'onClick={this.handleType}/>
+          <input id='shoes'type='button' value='shoes'onClick={this.handleType}/>
         </div>
-        <div>
-          { this.state.clothing.map(piece => (
-            <Mirror key = { piece.id }
-                    name = { piece.name }
-                  
-          />))}
+        <div className='mainClosetBody'>
+          <div className='MirrorCOMP'>
+            <a><img src='https://s3-us-west-1.amazonaws.com/paper-doll/TUKwoodiePlatforms.png' alt='test'/></a>
+          </div>
+          <div>
+            { clothingBytype.map(piece => (
+              <Hanger id = { piece.id }
+                      key = { piece.id }
+                      name = { piece.name }
+                      type = { piece.typeOf }
+                      image = { piece.image }/>))}
+          </div>
         </div>
       </div>
     </div>

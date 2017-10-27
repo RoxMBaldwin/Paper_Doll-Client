@@ -79,6 +79,11 @@ img {
   flex-direction: column;
   align-items: flex-end;
   background: Khaki;
+  padding-bottom: 14px;
+}
+
+.MirrorCOMP {
+  background: Thistle;
 }
 
 input {

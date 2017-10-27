@@ -4,8 +4,6 @@ import {
   Link
 } from 'react-router-dom'
 
-
-
 class Main extends React.Component {
   render(){
     return (
