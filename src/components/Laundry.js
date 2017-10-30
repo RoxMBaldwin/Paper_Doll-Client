@@ -32,9 +32,10 @@ export class Laundry extends React.Component {
       <input value={this.state.typeOf} onChange={this.handleChange} name='typeOf' type="text"/>
       <input value={this.state.image} onChange={this.handleChange}name='image' type="text"/>
       <button onClick={this.props.postName.bind(null, {
-            name: this.state.name,
-            typeOf: this.state.typeOf,
-            image: this.state.image})}/>
+                name: this.state.name,
+                typeOf: this.state.typeOf,
+                image: this.state.image}
+              )}/>
     </div>
   )
   };

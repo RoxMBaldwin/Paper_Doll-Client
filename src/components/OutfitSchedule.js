@@ -29,7 +29,7 @@ export class OutfitSchedule extends React.Component {
       <div className='subHeader'>
         <h3> Outfit Schedule </h3>
       </div>
-      <div className='week1'>
+      <section className='week1'>
         <div className='firstWeek'>1</div>
         <div className='firstWeek'>2</div>
         <div className='firstWeek'>3</div>
@@ -37,9 +37,9 @@ export class OutfitSchedule extends React.Component {
         <div className='firstWeek'>5</div>
         <div className='firstWeek'>6</div>
         <div className='firstWeek'>7</div>
-      </div>
+      </section>
       <hr/>
-      <div className='week2'>
+      <section className='week2'>
         <div className='secondWeek'>8</div>
         <div className='secondWeek'>9</div>
         <div className='secondWeek'>10</div>
@@ -47,7 +47,7 @@ export class OutfitSchedule extends React.Component {
         <div className='secondWeek'>12</div>
         <div className='secondWeek'>13</div>
         <div className='secondWeek'>14</div>
-      </div>
+      </section>
     </div>
   </div>
   )

@@ -2,9 +2,6 @@ import React from 'react';
 import Hanger from './Hanger.js'
 import Mirror from './Mirror.js'
 import { Laundry } from './Laundry.js'
-import {
-  Link
-} from 'react-router-dom'
 import '../dest/style.css/styles.css';
 
 const baseURL = 'https://damp-escarpment-70250.herokuapp.com'
@@ -29,13 +26,26 @@ class Closet extends React.Component {
   }
 
   postName = (body) => {
-    console.log(body);
-
-
-    this.setState({
-      ...this.state,
-      postingClothing : false})
+    //console.log(body);
+    const settings = {
+      method: 'POST',
+      body: JSON.stringify(body),
+      headers: {
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+      }
+    }
+    fetch(`${baseURL}/clothing/`, settings)
+    .then(response => {
+      if (response.ok){
+        this.setState({
+          ...this.state,
+          postingClothing : false})
+          window.location.reload()
+      }
+    })
   }
+
 
   togglePosting = () => {
     this.setState({
@@ -70,7 +80,7 @@ class Closet extends React.Component {
       <h1> Closet </h1>
       <div className='body'>
         <div className='sidebar'>
-          {this.state.postingClothing ? <Laundry postName={this.postName}/> : <button onClick={this.togglePosting}>Test</button>}
+          {this.state.postingClothing ? <Laundry postName={this.postName}/> : <button onClick={this.togglePosting} className='addNewButton'> + </button>}
 
           <input id='top' type='button' value='top' onClick={this.handleType}/>
           <input id='lower' type='button' value='lower' onClick={this.handleType}/>
