@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 import {
   Link
 } from 'react-router-dom'
-import './App.css';
+import './dest/style.css/styles.css';
 
 //const baseURL = 'https://damp-escarpment-70250.herokuapp.com'
 

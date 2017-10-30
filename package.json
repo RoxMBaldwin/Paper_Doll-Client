@@ -3,8 +3,11 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sourcemaps": "^2.6.1",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
+    "react-image-gallery": "^0.8.3",
     "react-router-dom": "^4.2.2",
     "react-scripts": "1.0.14"
   },
@@ -13,5 +16,10 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "autoprefixer": "^7.1.6",
+    "gulp-postcss": "^7.0.0",
+    "lost": "^8.2.0"
   }
 }

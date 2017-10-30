@@ -1,27 +1,53 @@
 import React from 'react';
-import '../index.css';
+import '../dest/style.css/styles.css';
+
+const baseURL = 'https://damp-escarpment-70250.herokuapp.com'
 
 export class OutfitSchedule extends React.Component {
+
+  constructor(props){
+    super(props)
+    this.state = {
+      clothing:[],
+      setType: '',
+      viewImage: []
+    }
+  }
+
+  async componentDidMount() {
+   const data = await fetch(`${baseURL}/clothing/`)
+   const response = await data.json()
+   this.setState({clothing: response})
+   console.log(response);
+  //  this.setState({outfits:})
+  }
+
   render(){
     return (
   <div className='schedule'>
     <div className='dummyCalendar'>
-      <h3> Outfit Schedule </h3>
-      <div>1</div>
-      <div>2</div>
-      <div>3</div>
-      <div>4</div>
-      <div>5</div>
-      <div>6</div>
-      <div>7</div>
+      <div className='subHeader'>
+        <h3> Outfit Schedule </h3>
+      </div>
+      <div className='week1'>
+        <div className='firstWeek'>1</div>
+        <div className='firstWeek'>2</div>
+        <div className='firstWeek'>3</div>
+        <div className='firstWeek'>4</div>
+        <div className='firstWeek'>5</div>
+        <div className='firstWeek'>6</div>
+        <div className='firstWeek'>7</div>
+      </div>
       <hr/>
-      <div>8</div>
-      <div>9</div>
-      <div>10</div>
-      <div>11</div>
-      <div>12</div>
-      <div>13</div>
-      <div>14</div>
+      <div className='week2'>
+        <div className='secondWeek'>8</div>
+        <div className='secondWeek'>9</div>
+        <div className='secondWeek'>10</div>
+        <div className='secondWeek'>11</div>
+        <div className='secondWeek'>12</div>
+        <div className='secondWeek'>13</div>
+        <div className='secondWeek'>14</div>
+      </div>
     </div>
   </div>
   )

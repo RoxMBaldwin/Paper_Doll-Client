@@ -1,6 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
+import './dest/style.css/styles.css';
 import { Header } from './components/Header';
 import { Footer } from './components/Footer';
 import { Laundry } from './components/Laundry.js'

@@ -2,7 +2,7 @@ import React from 'react';
 import {
   Link
 } from 'react-router-dom'
-import '../index.css';
+import '../dest/style.css/styles.css';
 
 
 export class Header extends React.Component {

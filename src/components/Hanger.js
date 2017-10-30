@@ -1,21 +1,23 @@
 import React from 'react';
-import '../index.css';
+import '../dest/style.css/styles.css';
 
 const Hanger = ({
   id,
   name,
   image,
-  type
+  type,
+  clothingBytype
 }) => {
-  // if ( type === typeClicked){
+  // console.log(type);
+  console.log({image});
+  // console.log({id});
   return(
     <div>
-      <a>
-        {name}
-      </a>
-      <a>
-        {type}
-      </a>
+      <div className='hangerTypes'>
+        <a>
+          {name}
+        </a>
+      </div>
     </div>
   )
 // }

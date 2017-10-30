@@ -1,20 +1,26 @@
 import React from 'react';
-import '../index.css';
+// import ImageGallery from 'react-image-gallery';
+import '../dest/style.css/styles.css';
 
-const Mirror = ({ name, image, type }) => {
+const Mirror = ({
+  setType,
+  id,
+  name,
+  type,
+  image }) => {
+    console.log({name})
   return(
     <div>
       <a>
-        {name}
+        <h4 className='mirrorName'>{name}</h4>
       </a>
-      <a>
-        {image}
-      </a>
-      <a>
-        {type}
-      </a>
+      <div>
+        <a>
+          <img src={image} alt='test'/>
+        </a>
+      </div>
     </div>
-  )
+ )
 }
 
 export default Mirror;
