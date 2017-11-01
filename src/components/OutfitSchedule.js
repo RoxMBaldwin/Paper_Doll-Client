@@ -55,9 +55,9 @@ export class OutfitSchedule extends React.Component {
         <div className='weeks'>
           <section className='psuedoWeeks'>
             <div>
-              <div className="nestedButtons">
-                {this.state.viewOutfit ? <Build/> : <button onClick={this.togglePosting} className='scheduleButtons'> sunday </button>}
-              </div>
+            <div className="nestedButtons">
+              <button className="scheduleButtons" value="2"> sunday</button>
+            </div>
             </div>
             <div>
               <div className="nestedButtons">
@@ -86,7 +86,7 @@ export class OutfitSchedule extends React.Component {
             </div>
             <div>
               <div className="nestedButtons">
-                <button className="scheduleButtons" value="7">saturday</button>
+                {this.state.viewOutfit ? <Build/> : <button onClick={this.togglePosting} className='scheduleButtons'> saturday </button>}
               </div>
             </div>
           </section>

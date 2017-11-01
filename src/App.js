@@ -24,13 +24,23 @@ class App extends Component {
   render() {
     return (
       <div className='application'>
-        <h1 className='logo'>Paper Doll</h1>
-        <label>responds to:</label>
-        <input className='FAKE' type='text'/>
-        <label>first pet you ever had name:</label>
-        <input className='FAKE'type='text'/>
-        <div className='links'>
-          <Link to='/begin/'>Login</Link>
+        <div className='Auth'>
+          <div className='loginLogo'>
+            <h1>Paper Doll</h1>
+          </div>
+          <div className='login'>
+            <label>username:</label>
+            <input className='FAKE' type='text'/>
+            <br/>
+            <label>password:</label>
+            <input className='FAKE'type='password'/>
+          </div>
+          <div className='link'>
+            <Link to='/begin/'>login</Link>
+          </div>
+        </div>
+        <div className='signup'>
+          <button className='signupButton'>sign up</button>
         </div>
       </div>
     );

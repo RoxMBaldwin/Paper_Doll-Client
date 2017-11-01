@@ -13,13 +13,24 @@ const Hanger = ({
   // console.log({id});
   return(
     <div className='hanger'>
-    <div className='hangerTypes'>
-      <div>
-        <a>
-          {name}
-        </a>
+      <div className='hangerTypes'>
+        <div>
+          <div className='hangerName'>
+            <a>
+              {name}
+            </a>
+          </div>
+          <div className='outfitDay'>
+            <p className='append'>append to schedule:</p>
+            <label>enter day </label>
+            <input className='outfitDaytxt' type='text' />
+          </div>
+          <div className='hangerAddDel'>
+            <button className='hangerButtons'>+</button>
+            <button className='hangerminusButtons'>-</button>
+          </div>
+        </div>
       </div>
-    </div>
     </div>
   )
 // }

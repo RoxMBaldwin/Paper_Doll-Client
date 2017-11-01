@@ -8,7 +8,7 @@ export class Footer extends React.Component {
       <p> Paper Doll </p>
     </div>
     <div>
-      <p> copyright 2017 </p>
+      <p> Space Legs Design </p>
     </div>
   </footer>
   };

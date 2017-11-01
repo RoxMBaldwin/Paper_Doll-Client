@@ -15,9 +15,9 @@ export class Header extends React.Component {
           </div>
           <div className='headerNavBar'>
             <ul className='navBarnav'>
-                <Link to='/begin/'>Home</Link>
-                <Link to='/clothing/'>Closet</Link>
-                <Link to='/outfits/'>Outfit Schedule</Link>
+                <Link className='navLinks' to='/begin/'>Home</Link>
+                <Link className='navLinks' to='/clothing/'>Closet</Link>
+                <Link className='navLinks' to='/outfits/'>Outfit Schedule</Link>
             </ul>
           </div>
         </div>
