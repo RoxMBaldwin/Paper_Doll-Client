@@ -15,9 +15,12 @@ class Closet extends React.Component {
       setType: '',
       viewImage: [],
       postBody: [],
-      postingClothing: false
+      postingClothing: false,
+      storeItems: []
     }
   }
+
+  // storeItems =
 
 
   handleType = (e) => {
@@ -76,17 +79,21 @@ class Closet extends React.Component {
 
 
   return (
+
     <div className='closet'>
       <h1> Closet </h1>
-      <div className='body'>
-        <div className='sidebar'>
-          {this.state.postingClothing ? <Laundry postName={this.postName}/> : <button onClick={this.togglePosting} className='addNewButton'> + </button>}
-
-          <input id='top' type='button' value='top' onClick={this.handleType}/>
-          <input id='lower' type='button' value='lower' onClick={this.handleType}/>
-          <input id='one-piece' type='button' value='one-piece'onClick={this.handleType}/>
-          <input id='shoes'type='button' value='shoes'onClick={this.handleType}/>
+      <div className='sidebar'>
+        <div className='types'>
+          <input id='top' className='closetButton' type='button' value='top' onClick={this.handleType}/>
+          <input id='lower' className='closetButton' type='button' value='lower' onClick={this.handleType}/>
+          <input id='one-piece' className='closetButton' type='button' value='one-piece'onClick={this.handleType}/>
+          <input id='shoes' className='closetButton' type='button' value='shoes'onClick={this.handleType}/>
+          <div className='addNew'>
+            {this.state.postingClothing ? <Laundry postName={this.postName}/> : <button onClick={this.togglePosting} className='addNewButton'> + </button>}
+          </div>
         </div>
+      </div>
+      <div className='body'>
         <div className='closetView'>
           <div className='mainMirrorBody'>
             { clothingBytype.map(piece => (

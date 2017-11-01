@@ -8,11 +8,13 @@ class Main extends React.Component {
 
   render(){
     return (
-    <div className='home'>
-      <div>
-        <Link to='/'>Log out</Link>
+    <body>
+      <div className='home'>
+        <div>
+          <Link to='/'>Log out</Link>
+        </div>
       </div>
-    </div>
+    </body>
     )
   }
 }

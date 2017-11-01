@@ -12,12 +12,14 @@ const Hanger = ({
   console.log({image});
   // console.log({id});
   return(
-    <div>
-      <div className='hangerTypes'>
+    <div className='hanger'>
+    <div className='hangerTypes'>
+      <div>
         <a>
           {name}
         </a>
       </div>
+    </div>
     </div>
   )
 // }

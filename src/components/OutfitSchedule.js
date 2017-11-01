@@ -1,4 +1,5 @@
 import React from 'react';
+import { Build } from './Build.js'
 import '../dest/style.css/styles.css';
 
 const baseURL = 'https://damp-escarpment-70250.herokuapp.com'
@@ -10,8 +11,30 @@ export class OutfitSchedule extends React.Component {
     this.state = {
       clothing:[],
       setType: '',
-      viewImage: []
+      valueOfOutfit: [],
+      viewOutfit: false
     }
+  }
+
+  checkForValue = ({clothing}, {viewOutfit}) => {
+    if({viewOutfit}){
+      this.setState({valueOfOutfit : {
+        name : clothing.name,
+        type : clothing.typeOf,
+        image : clothing.image
+        }
+      })
+    } else {
+      this.setState({valueOfOutfit : []})
+    }
+  }
+
+
+  togglePosting = () => {
+    this.setState({
+      ...this.state,
+      viewOutfit: true
+    })
   }
 
   async componentDidMount() {
@@ -24,32 +47,52 @@ export class OutfitSchedule extends React.Component {
 
   render(){
     return (
-  <div className='schedule'>
-    <div className='dummyCalendar'>
-      <div className='subHeader'>
-        <h3> Outfit Schedule </h3>
+    <div className='schedule'>
+      <div className='dummyCalendar'>
+        <div className='subHeader'>
+          <h3> Outfit Schedule </h3>
+        </div>
+        <div className='weeks'>
+          <section className='psuedoWeeks'>
+            <div>
+              <div className="nestedButtons">
+                {this.state.viewOutfit ? <Build/> : <button onClick={this.togglePosting} className='scheduleButtons'> sunday </button>}
+              </div>
+            </div>
+            <div>
+              <div className="nestedButtons">
+                <button className="scheduleButtons" value="2"> monday</button>
+              </div>
+            </div>
+            <div>
+              <div className="nestedButtons">
+                <button className="scheduleButtons" value="3"> tuesday</button>
+              </div>
+            </div>
+            <div>
+              <div className="nestedButtons">
+                <button className="scheduleButtons" value="4">wednesday</button>
+              </div>
+            </div>
+            <div>
+              <div className="nestedButtons">
+                <button className="scheduleButtons" value="5">thursday</button>
+              </div>
+            </div>
+            <div>
+              <div className="nestedButtons">
+                <button className="scheduleButtons" value="6">friday</button>
+              </div>
+            </div>
+            <div>
+              <div className="nestedButtons">
+                <button className="scheduleButtons" value="7">saturday</button>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
-      <section className='week1'>
-        <div className='firstWeek'>1</div>
-        <div className='firstWeek'>2</div>
-        <div className='firstWeek'>3</div>
-        <div className='firstWeek'>4</div>
-        <div className='firstWeek'>5</div>
-        <div className='firstWeek'>6</div>
-        <div className='firstWeek'>7</div>
-      </section>
-      <hr/>
-      <section className='week2'>
-        <div className='secondWeek'>8</div>
-        <div className='secondWeek'>9</div>
-        <div className='secondWeek'>10</div>
-        <div className='secondWeek'>11</div>
-        <div className='secondWeek'>12</div>
-        <div className='secondWeek'>13</div>
-        <div className='secondWeek'>14</div>
-      </section>
     </div>
-  </div>
   )
   };
 }

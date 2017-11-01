@@ -1,0 +1,250 @@
+/*@import "node_modules/react-image-gallery/styles/css/image-gallery.css";*/
+
+.App {
+  text-align: center;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin infinite 20s linear;
+          animation: App-logo-spin infinite 20s linear;
+  height: 80px;
+}
+
+.application {
+  height: 100%;
+  margin: 0;
+}
+
+.App-header {
+  background-color: #222;
+  height: 150px;
+  padding: 20px;
+  color: white;
+}
+
+.navBar {
+  background-color: Lavender;
+  padding: 15px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.headerNavBar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  margin-left: 60px;;
+}
+
+a {
+  margin: 40px;
+}
+
+div.logo {
+  background-color: Lavender;
+  padding-left: 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+img {
+  height: 60%;
+  width: 60%;
+}
+
+.imageInfo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 60%;
+  width: 60%;
+}
+
+.body {
+  padding: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: reverse;
+      -ms-flex-direction: row-reverse;
+          flex-direction: row-reverse;
+  background: LemonChiffon;
+}
+
+.sidebar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  height: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  background: Khaki;
+  padding-bottom: 14px;
+}
+
+.MirrorCOMP {
+  background: Thistle;
+}
+
+input {
+  margin: 8px;
+}
+
+.links {
+  margin-left: 15px;
+  margin-bottom: 30px;
+  margin-top: 30px;
+  padding-bottom: 15px;
+}
+
+.home {
+  min-height: 100%;
+  margin-bottom: -50px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.closet {
+  min-height: 100%;
+  margin-bottom: -50px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.schedule {
+  min-height: 100%;
+  margin-bottom: -50px;
+  padding: 20px;
+  padding-bottom: 50px;
+}
+
+.week1 {
+  width: 100%;
+  width: calc(99.9% * 1/7 - (30px - 30px * 1/7));
+  background: PapayaWhip;
+}
+
+.week1:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+
+.week1:last-child {
+  margin-right: 0;
+}
+
+.week1:nth-child(7n) {
+  margin-right: 0;
+  float: right;
+}
+
+.week1:nth-child(7n + 1) {
+  clear: both;
+}
+
+.week2 {
+  width: 100%;
+  width: calc(99.9% * 1/7 - (30px - 30px * 1/7));
+  background: Moccasin;
+}
+
+.week2:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+
+.week2:last-child {
+  margin-right: 0;
+}
+
+.week2:nth-child(7n) {
+  margin-right: 0;
+  float: right;
+}
+
+.week2:nth-child(7n + 1) {
+  clear: both;
+}
+
+.firstWeek {
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.secondWeek {
+  margin-bottom: 20px;
+  margin: 10px;
+}
+
+.footer {
+  background: Lavender;
+  padding-left: 15px;
+  height: 50px;
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+@-webkit-keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes App-logo-spin {
+  from { -webkit-transform: rotate(0deg); transform: rotate(0deg); }
+  to { -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}

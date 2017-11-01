@@ -4,30 +4,29 @@
   text-align: center;
 }
 
-html, body {
-  height: 100%;
-  margin: 0;
+html {
+  position: relative;
+  min-height: 100%;
+  font-family: 'Saira', sans-serif;
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+body {
+    margin: 0 0 20px; /* bottom = footer height */
 }
 
 .application {
   height: 100%;
   margin: 0;
+  background: #FFE6D7;
+  margin-bottom: 20vh;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+.FAKE {
+  width: 80%;
 }
 
 .navBar {
-  background-color: Lavender;
+  background-color: #D7FEFF;
   padding: 15px;
 }
 
@@ -38,20 +37,57 @@ html, body {
 
 .headerNavBar {
   display: flex;
-  flex-direction: row;
-  align-items: flex-end;
-  margin-left: 60px;;
+  height: 100px;
+  padding: 5px;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
 }
 
+
+
 a {
-  margin: 40px;
+  margin: 10px;
+}
+
+button {
+  background: #B2ABA7;
+  color: #FFF6F1;
+}
+
+.closetButton {
+  background: #B2ABA7;
+  color: #FFF6F1;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #97B2B2;
+  border-width: 8px;
+  color: #FFE6D7;
+  font-size: 1.4em;
+  letter-spacing: .25em;
+  width: 80%;
+  text-align: center;
+}
+
+.addNewButton {
+  background: #97B2B2;
+  color: #FFF6F1;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #9F95AD;
+  border-width: 8px;
+  color: #FFE6D7;
+  font-size: 2.4em;
+  width: 20%;
+  text-align: center;
 }
 
 div.logo {
-  background-color: Lavender;
+  background-color: #D7FEFF;
   padding-left: 15px;
   display: flex;
   align-items: flex-end;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
 img {
@@ -67,36 +103,41 @@ img {
   width: 60%;
 }
 
-.body {
+div.closet {
+  height: 100%;
+  margin-bottom: 6em;
+}
+
+/*.body {
   padding: 40px;
+  height: 100%;
   display: flex;
   flex-direction: row-reverse;
   background: LemonChiffon;
-}
+}*/
 
 .sidebar {
   display: flex;
-  width: 30%;
+  width: 100%;
   height: 30%;
-  flex-direction: column;
-  align-items: flex-end;
-  background: Khaki;
+  margin-left: 1.4em;
   padding-bottom: 14px;
 }
 
+div .addNew {
+  display: flex;
+  justify-content: center;
+  margin-right: 3em;
+}
+
 .MirrorCOMP {
-  background: Thistle;
+  background: #FFF6F1;
+  padding: 1em;
 }
 
 input {
   margin: 8px;
-}
-
-.links {
-  margin-left: 15px;
-  margin-bottom: 30px;
-  margin-top: 30px;
-  padding-bottom: 15px;
+  width: 100%;
 }
 
 .home {
@@ -113,6 +154,81 @@ input {
   padding-bottom: 50px;
 }
 
+.mirrorGroup {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #B2ABA7;
+  color: #FFF6F1;
+  padding: 10px;
+  font-size: 1.4em;
+  font-style: italic;
+  margin-right: 20px;
+}
+
+img.mirrorIMG {
+  display: flex;
+  margin-right: 80px;
+}
+/*
+div.types {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}*/
+
+.hanger {
+  margin-top: 1em;
+  background: #FFF6F1;
+  width:100%;
+  display: flex;
+  justify-content: center;
+}
+
+.hangerTypes {
+  background: #D7FEFF;
+  padding: 1em;
+  width: 70%;
+  text-align: left;
+}
+
+button.saveNew {
+  height: 10vh;
+  width: 80%;
+  margin-left: 1em;
+  background: #97B2B2;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #9F95AD;
+  border-width: 10px;
+  color: #FFE6D7;
+  font-size: 1.4em;
+  letter-spacing: .25em;
+}
+
+.laundry {
+  background: #B2ABA7;
+  padding: 1em;
+}
+
+.fresh {
+  padding: 10px;
+  lost-column: 1/1;
+}
+
+h3 {
+    text-align: center;
+}
+
+.fresh {
+  padding: 10px;
+}
+
+.dummyCalendar {
+  display: flex;
+  flex-direction: column;
+}
+
 .schedule {
   min-height: 100%;
   margin-bottom: -50px;
@@ -120,32 +236,43 @@ input {
   padding-bottom: 50px;
 }
 
-.week1 {
-  lost-column: 1/7;
-  background: PapayaWhip;
+.psuedoWeeks {
+  min-height: 100%;
+  width: 90%;
+  lost-center: 90%;
+  margin-bottom: 20vh;
+  margin-top: 10vh;
 }
 
-.week2 {
-  lost-column: 1/7;
-  background: Moccasin;
+.psuedoWeeks div {
+  margin-bottom: 40px;
+  lost-column: 1/1;
+  height: 20vh;
+  lost-align: center;
 }
 
-.firstWeek {
-  margin: 10px;
+.psuedoWeeks div button {
+  height: 20vh;
+  width: 80%;
+  border-radius: 10px;
+  border-style: solid;
+  border-color: #97B2B2;
+  border-width: 10px;
+  color: #FFE6D7;
+  font-size: 1.4em;
+  letter-spacing: .25em;
 }
 
-.secondWeek {
-  margin: 10px;
-}
-
-.footer {
-  background: Lavender;
-  padding-left: 15px;
-  height: 50px;
-  margin-top: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+#bottom-footer {
+    position: absolute;
+    left: 0;
+    bottom: 10;
+    height: 44px;
+    width: 100%;
+    background: #D7FEFF;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
 }
 
 .App-title {
@@ -159,4 +286,54 @@ input {
 @keyframes App-logo-spin {
   from { transform: rotate(0deg); }
   to { transform: rotate(360deg); }
+}
+
+@media (min-width: 600px){
+  .psuedoWeeks div  {
+    lost-column: 1/2;
+  }
+  .psuedoWeeks div button {
+    height: 15vh;
+    width: 30vw;
+  }
+}
+
+@media (min-width: 800px){
+  .psuedoWeeks div  {
+    lost-column: 1/3;
+  }
+  .psuedoWeeks div button {
+    height: 20vh;
+    width: 20vw;
+  }
+}
+
+@media (min-width: 900px){
+  .psuedoWeeks div  {
+    lost-column: 1/4;
+  }
+  .psuedoWeeks div button {
+    height: 20vh;
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1300px){
+  .psuedoWeeks div  {
+    lost-column: 1/5;
+  }
+  .psuedoWeeks div button {
+    height: 20vh;
+    width: 20vw;
+  }
+}
+
+@media (min-width: 1200px){
+  .psuedoWeeks div  {
+    lost-column: 1/7;
+  }
+  button .scheduleButtons {
+    height: 20vh;
+    width: 20vw;
+  }
 }

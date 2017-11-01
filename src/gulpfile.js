@@ -10,9 +10,7 @@ gulp.task('styles', function() {
     autoprefixer({browsers: ['last 2 version']})
   ]
   return gulp.src('styles.css')
-    .pipe( sourcemaps.init() )
     .pipe(postcss(processors))
-    .pipe( sourcemaps.write('.') )
     // .pipe(gulp.dest('./dest/styles.css'))
     .pipe( gulp.dest('./dest/style.css') );
 });

@@ -27,15 +27,31 @@ export class Laundry extends React.Component {
   render(){
     return (
     <div className='laundry'>
-      <h1>add new piece of clothing</h1>
-      <input value={this.state.name} onChange={this.handleChange} name='name' type="text"/>
-      <input value={this.state.typeOf} onChange={this.handleChange} name='typeOf' type="text"/>
-      <input value={this.state.image} onChange={this.handleChange}name='image' type="text"/>
-      <button onClick={this.props.postName.bind(null, {
-                name: this.state.name,
-                typeOf: this.state.typeOf,
-                image: this.state.image}
-              )}/>
+      <h3>ADD NEW:</h3>
+      <div className='fresh'>
+        <div className='freshInputs'>
+          <label>Name:</label>
+          <br/>
+          <input value={this.state.name} onChange={this.handleChange} name='name' type="text"/>
+        </div>
+        <div className='freshInputs'>
+          <label>Type Of Clothing:</label>
+          <br/>
+          <input value={this.state.typeOf} onChange={this.handleChange} name='typeOf' type="text"/>
+        </div>
+        <div className='freshInputs'>
+          <label>Image URL:</label>
+          <br/>
+          <input value={this.state.image} onChange={this.handleChange}name='image' type="text"/>
+        </div>
+      </div>
+      <div className='saveNewButton'>
+        <button className='saveNew' onClick={this.props.postName.bind(null, {
+                  name: this.state.name,
+                  typeOf: this.state.typeOf,
+                  image: this.state.image}
+                )}>save</button>
+      </div>
     </div>
   )
   };

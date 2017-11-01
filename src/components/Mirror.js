@@ -10,13 +10,13 @@ const Mirror = ({
   image }) => {
     console.log({name})
   return(
-    <div>
+    <div className='mirrorGroup'>
       <a>
         <h4 className='mirrorName'>{name}</h4>
       </a>
       <div>
         <a>
-          <img src={image} alt='test'/>
+          <img className='mirrorIMG' src={image} alt='test'/>
         </a>
       </div>
     </div>

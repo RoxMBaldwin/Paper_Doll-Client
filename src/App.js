@@ -25,6 +25,10 @@ class App extends Component {
     return (
       <div className='application'>
         <h1 className='logo'>Paper Doll</h1>
+        <label>responds to:</label>
+        <input className='FAKE' type='text'/>
+        <label>first pet you ever had name:</label>
+        <input className='FAKE'type='text'/>
         <div className='links'>
           <Link to='/begin/'>Login</Link>
         </div>
