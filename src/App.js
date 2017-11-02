@@ -30,9 +30,11 @@ class App extends Component {
           </div>
           <div className='login'>
             <label>username:</label>
+            <br/>
             <input className='FAKE' type='text'/>
             <br/>
             <label>password:</label>
+            <br/>
             <input className='FAKE'type='password'/>
           </div>
           <div className='link'>

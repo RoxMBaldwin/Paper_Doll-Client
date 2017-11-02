@@ -31,7 +31,7 @@ export class Build extends React.Component {
           <ul className='list'>
             <li>
             <a>
-              <img className='quadtop' src='https://s3-us-west-1.amazonaws.com/paper-doll/QuadBloxNeutral.png' alt='top'/>
+              <img className='quadtop' src='https://s3-us-west-1.amazonaws.com/paper-doll/AnnTaylorVelvet.png' alt='top'/>
             </a>
             </li>
             <li>

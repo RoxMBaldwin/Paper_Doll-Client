@@ -1,4 +1,5 @@
 import React from 'react';
+import Logo from '../assets/paperdollLogo.png';
 import {
   Link
 } from 'react-router-dom'
@@ -11,7 +12,9 @@ export class Header extends React.Component {
       <nav className='navBar'>
         <div className='container'>
           <div className='logo'>
-            <h2>LOGO</h2>
+            <a>
+              <img src={Logo} alt='Paper Doll'/>
+            </a>
           </div>
           <div className='headerNavBar'>
             <ul className='navBarnav'>

@@ -27,7 +27,7 @@ export class Laundry extends React.Component {
   render(){
     return (
     <div className='laundry'>
-      <h3>ADD NEW:</h3>
+      <h3 className='addNewH3'>ADD NEW:</h3>
       <div className='fresh'>
         <div className='freshInputs'>
           <label>Name:</label>
@@ -42,7 +42,7 @@ export class Laundry extends React.Component {
         <div className='freshInputs'>
           <label>Image URL:</label>
           <br/>
-          <input value={this.state.image} onChange={this.handleChange}name='image' type="text"/>
+          <input value={this.state.image} onChange={this.handleChange} name='image' type="text"/>
         </div>
       </div>
       <div className='saveNewButton'>

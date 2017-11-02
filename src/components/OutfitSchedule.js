@@ -50,7 +50,7 @@ export class OutfitSchedule extends React.Component {
     <div className='schedule'>
       <div className='dummyCalendar'>
         <div className='subHeader'>
-          <h3> Outfit Schedule </h3>
+          <h1 className='subHeaderh1'> Outfit Schedule </h1>
         </div>
         <div className='weeks'>
           <section className='psuedoWeeks'>

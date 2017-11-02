@@ -17,7 +17,7 @@ body {
 .application {
   height: 100%;
   margin: 0;
-  background: #FFE6D7;
+  background: #FFF6F1;
   margin-bottom: 20vh;
   padding-left: 1.75em;
 }
@@ -33,7 +33,9 @@ body {
 }
 
 .login {
-  padding: 20px;
+  padding: 10px;
+  letter-spacing: .22em;
+  margin-left: 3.5em;
 }
 
 .link  {
@@ -73,7 +75,7 @@ body {
 
 .navBar {
   background-color: #D7FEFF;
-  padding: 10px;
+  padding: 6px;
   display: flex;
   flex-direction: column;
 }
@@ -93,6 +95,7 @@ body {
 
 .navLinks {
   font-size: .75em;
+  letter-spacing: .05em;
   color: #97B2B2;
 }
 
@@ -107,13 +110,25 @@ button {
 
 .welcome {
   text-align: center;
+  background: #FFF6F1;
+  padding: 3px;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #FFF6F1;
+  border-width: 2px;
 }
 
 .username {
   color: #97B2B2;
+  background: #D7FEFF;
   text-align: center;
-  margin-right: 1em;
+  margin-right: .25em;
+  margin-top: 2em;
   margin-bottom: 3em;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #D7FEFF;
+  border-width: 2px;
 }
 
 .mainImage {
@@ -122,15 +137,20 @@ button {
 }
 
 .placeholder {
-  height: 60vh;
-  width: 60vw;
+  height: 100%;
+  width: 100%;
 }
 
 .instructions {
   color: #B2ABA7;
   background: #FFF6F1;
-  padding: 1.2em;
+  padding: 1em;
   font-style: italic;
+  text-align: center;
+  border-radius: 4px;
+  border-style: solid;
+  border-color: #FFF6F1;
+  border-width: 8px;
 }
 
 .logout {
@@ -146,7 +166,7 @@ button {
   width: 60%;
   text-align: center;
   margin: 15px;
-  margin-left: 48px;
+  margin-left: 58px;
   margin-top: 54px;
 }
 
@@ -167,23 +187,22 @@ button {
 .addNewButton {
   background: #97B2B2;
   color: #FFF6F1;
-  border-radius: 6px;
+  border-radius: 10px;
   border-style: solid;
   border-color: #9F95AD;
-  border-width: 8px;
+  border-width: 10px;
   color: #FFE6D7;
-  font-size: 2.4em;
-  width: 20%;
+  font-size: 1.4em;
+  height: 10vh;
+  width: 20vw;
   text-align: center;
 }
 
 div.logo {
-  background-color: #D7FEFF;
-  padding-left: 15px;
-  margin-bottom: 1em;
+  width: 8em;
   display: flex;
   align-items: flex-end;
-  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+  color: #97B2B2;
 }
 
 img {
@@ -223,7 +242,8 @@ div.closet {
 div .addNew {
   display: flex;
   justify-content: center;
-  margin-right: 3em;
+  margin-right: 2.9em;
+  margin-top: 1em;
 }
 
 .MirrorCOMP {
@@ -241,6 +261,7 @@ input {
   margin-bottom: -50px;
   padding: 20px;
   padding-bottom: 50px;
+  background-image: url(https://ae01.alicdn.com/kf/HTB1G3ulJVXXXXcXXXXXq6xXFXXXj/Hot-sale-kid-s-Gift-mini-cute-lovely-kewpie-home-decoration-plastic-craft-baby-doll-5pcs.jpg);
 }
 
 .closet {
@@ -264,6 +285,8 @@ input {
 .mirrorName {
   margin-bottom: 0;
   margin-left: .75em;
+  color: #FFE6D7;
+  letter-spacing: .15em;
 }
 
 .mirrorIMG {
@@ -281,7 +304,7 @@ input {
   display: flex;
   align-items: center;
   text-align: center;
-  margin-left: .3em;
+  margin-left: .5em;
 }
 
 .append {
@@ -290,18 +313,26 @@ input {
 
 .hangerName {
   text-align: center;
-  margin-right: 3.6em;
+  margin-right: 1.85em;
+  letter-spacing: .25em;
+  font-size: 1.4em;
+  color: #B2ABA7;
 }
 
 .outfitDay {
   width: 60%;
   padding: .5em;
   text-align: center;
+  letter-spacing: .25em;
   margin-bottom: .5em;
   margin-top: 1em;
-  margin-left: .7em;
+  margin-left: .5em;
   background: #97B2B2;
   color: #FFF6F1;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #97B2B2;
+  border-width: 8px;
 }
 
 .outfitDaytxt {
@@ -364,6 +395,7 @@ button.saveNew {
   height: 10vh;
   width: 80%;
   margin-left: 1em;
+  margin-top: 1em;
   background: #97B2B2;
   border-radius: 10px;
   border-style: solid;
@@ -374,9 +406,20 @@ button.saveNew {
   letter-spacing: .25em;
 }
 
+.addNewH3 {
+  color: #FFE6D7;
+  font-size: 1.4em;
+  letter-spacing: .25em;
+}
+
 .laundry {
   background: #B2ABA7;
   padding: 1em;
+  border-radius: 6px;
+  border-style: solid;
+  border-color: #B2ABA7;
+  border-width: 8px;
+  margin-right: 2px;
 }
 
 .fresh {
@@ -384,12 +427,24 @@ button.saveNew {
   lost-column: 1/1;
 }
 
+.freshInputs {
+  color: #FFF6F1;
+  font-size: 1.2em;
+  letter-spacing: .25em;
+  padding: 2px;
+}
+
 h3 {
     text-align: center;
 }
 
-.fresh {
-  padding: 10px;
+h1 {
+  letter-spacing: .25em;
+}
+
+.subHeaderh1 {
+  letter-spacing: .12em;
+  margin-bottom: 0;
 }
 
 .dummyCalendar {
@@ -466,6 +521,7 @@ h3 {
 #bottom-footer {
     position: absolute;
     color: #97B2B2;
+    letter-spacing: .1em;
     left: 0;
     bottom: 10;
     height: 44px;
