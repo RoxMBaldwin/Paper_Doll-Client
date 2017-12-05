@@ -593,7 +593,7 @@ h1 {
 
 .psuedoWeeks div button {
   height: 20vh;
-  width: 80%;
+  width: 90%;
   border-radius: 10px;
   border-style: solid;
   border-color: #97B2B2;
@@ -713,7 +713,7 @@ h1 {
   }
 }
 
-@media (min-width: 800px){
+@media (min-width: 900px){
   .psuedoWeeks div  {
     width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
   }
@@ -741,37 +741,9 @@ h1 {
   }
 }
 
-@media (min-width: 900px){
-  .psuedoWeeks div  {
-    width: calc(99.9% * 1/4 - (30px - 30px * 1/4));
-  }
-  .psuedoWeeks div:nth-child(1n)  {
-    float: left;
-    margin-right: 30px;
-    clear: none;
-  }
-  .psuedoWeeks div:last-child  {
-    margin-right: 0;
-  }
-  .psuedoWeeks div:nth-child(4n)  {
-    margin-right: 0;
-    float: right;
-  }
-  .psuedoWeeks div:nth-child(4n + 1)  {
-    clear: both;
-  }
-  .psuedoWeeks div button {
-    height: 20vh;
-    width: 20vw;
-  }
-  .FAKE {
-    width: 20%;
-  }
-}
-
 @media (min-width: 1300px){
   .psuedoWeeks div  {
-    width: calc(99.9% * 1/5 - (30px - 30px * 1/5));
+    width: calc(99.9% * 1/3 - (30px - 30px * 1/3));
   }
   .psuedoWeeks div:nth-child(1n)  {
     float: left;
@@ -781,11 +753,11 @@ h1 {
   .psuedoWeeks div:last-child  {
     margin-right: 0;
   }
-  .psuedoWeeks div:nth-child(5n)  {
+  .psuedoWeeks div:nth-child(3n)  {
     margin-right: 0;
     float: right;
   }
-  .psuedoWeeks div:nth-child(5n + 1)  {
+  .psuedoWeeks div:nth-child(3n + 1)  {
     clear: both;
   }
   .psuedoWeeks div button {

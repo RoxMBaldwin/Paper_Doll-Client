@@ -40,9 +40,9 @@ export class Laundry extends React.Component {
           <input value={this.state.typeOf} onChange={this.handleChange} name='typeOf' type="text"/>
         </div>
         <div className='freshInputs'>
-          <label>Image URL:</label>
+          <label>Image:</label>
           <br/>
-          <input value={this.state.image} onChange={this.handleChange} name='image' type="text"/>
+          <input value={this.state.image} onChange={this.handleChange} name='image' type="file" accept="image/*;capture=camera"/>
         </div>
       </div>
       <div className='saveNewButton'>

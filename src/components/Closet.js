@@ -16,11 +16,15 @@ class Closet extends React.Component {
       viewImage: [],
       postBody: [],
       postingClothing: false,
-      storeItems: []
+      scheduleDay: ''
     }
   }
-
-  // storeItems =
+  //
+  appendScheduleDay = (e) => {
+    const dayToAdd = e.target.value
+    this.setState({scheduleDay : dayToAdd})
+    console.log('appendScheduleDay');
+  }
 
 
   handleType = (e) => {
@@ -61,7 +65,7 @@ class Closet extends React.Component {
    const data = await fetch(`${baseURL}/clothing/`)
    const response = await data.json()
    this.setState({clothing: response})
-   //console.log(response);
+   console.log(response);
   //  this.setState({outfits:})
   }
 
@@ -114,7 +118,8 @@ class Closet extends React.Component {
                         type = { piece.typeOf }
                         image = { piece.image }
                         viewImage
-                        clothingBytype/>))}
+                        clothingBytype
+                        appendScheduleDay/>))}
             </div>
           </div>
         </div>

@@ -21,7 +21,7 @@ const Hanger = ({
             </a>
           </div>
           <div className='outfitDay'>
-            <p className='append'>append to schedule:</p>
+            <p>append to schedule</p>
             <label>enter day </label>
             <input className='outfitDaytxt' type='text' />
           </div>
